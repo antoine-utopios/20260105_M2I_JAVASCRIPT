@@ -47,6 +47,16 @@ console.log(`Bonjour ${prenom} ${nom}, bienvenue sur notre site !`);
 console.log(`La somme de 1 et de 4 est de: ${1 + 4}`);
 // console.log(`Le numéro gagnant du loto de la semaine passée était: ${numeroGagnantSemainePassee()}`);
 
+
+/* les méthodes de l'objet 'window'
+    - alert() => Permet l'affichage (affichage uniquement) d'un message, personnalisé ou non
+    - prompt() => Permet l'affichage d'un message, personnalisé ou non et la récupération d'une donnée de type textuel entrée par l'utilisateur
+    - confirm() => Permet l'affichage d'un message, personnalisé ou non et la récupération d'un booléen basé sur le clic d'un bouton (OK ou Cancel)
+ */
+
 window.alert("Texte de l'alert!");
 let valeurUtilisateur = window.prompt("Quel est votre fruit préféré ?");
 window.alert(`Ah d'accord, j'ai bien compris ! Votre fruit préféré est: ${valeurUtilisateur}`);
+let reponseUtilisateur = window.confirm("Etes-vous sûr ?");
+
+console.log(reponseUtilisateur);
